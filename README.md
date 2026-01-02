@@ -3,6 +3,11 @@
 ## Project Overview
 This project demonstrates a full-cycle SQL data workflow using the Brazilian Olist E-commerce dataset in **SQL Server Management Studio (SSMS)**. I transitioned raw CSV data into a structured relational database to perform financial, operational, and time-series analyses.
 
+## Data Source
+The dataset used in this project is the **Brazilian E-Commerce Public Dataset by Olist**, hosted on [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+* **Dataset Size:** 100,000+ orders from 2016 to 2018.
+* **Context:** This is real commercial data from Olist, the largest department store in Brazilian marketplaces.
+
 ## Technical Skills Demonstrated
 * **Database Design:** Creating relational schemas with proper data types (`UNIQUEIDENTIFIER`, `DATETIME2`, `DECIMAL`).
 * **ETL & Data Ingestion:** Mapping and importing 100k+ records using the SSMS Import Flat File Wizard.
@@ -30,4 +35,5 @@ A time-series analysis that extracts `YEAR` and `MONTH` from timestamps. It trac
 1. **Setup:** Run `01_Table_Setup.sql` to create the table structures.
 2. **Ingestion:** Use the SSMS Import Flat File Wizard to load the CSVs into `raw_orders` and `raw_payments`, ensuring data types match the schema in Step 1.
 3. **Audit:** Run `02_Data_Verification.sql` to confirm the data landed correctly.
+
 4. **Analysis:** Execute scripts 03, 04, and 05 to generate business insights.
